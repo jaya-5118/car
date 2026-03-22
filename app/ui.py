@@ -695,4 +695,4 @@ def build_interface() -> gr.Blocks:
 
 if __name__ == "__main__":
     app = build_interface()
-    app.launch()
+    app.launch(share=True)
