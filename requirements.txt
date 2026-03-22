@@ -4,4 +4,14 @@ numpy
 opencv-python-headless
 pandas
 python-dotenv
-gradio
+gradio>=5.0.0
+ultralytics
+google-genai
+openrouteservice
+speech_recognition
+gtts
+pydantic
+requests
+folium
+youtube-search-python
+pyaudio

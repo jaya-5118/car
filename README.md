@@ -67,4 +67,24 @@ This will open a browser interface where you can upload any road image and see:
 - Risk score & heatmap overlay.
 - Scenario summary and basic explanation of what the model is focusing on.
 
-# selfdriving
+# Deployment
+
+### **Option 1: Hugging Face Spaces (Recommended for AI Apps)**
+1.  Create a new [Hugging Face Space](https://huggingface.co/new-space).
+2.  Choose **Gradio** as the SDK.
+3.  Connect your GitHub repository: `jaya-5118/car`.
+4.  Add your API Keys (`GEMINI_API_KEY`, `ORS_API_KEY`) as **Secrets** in the Space settings.
+5.  Hugging Face will automatically deploy your app and give you a public URL!
+
+### **Option 2: Railway / Render (For Always-On Backend)**
+1.  Create a new project on [Railway.app](https://railway.app/).
+2.  Import this repository.
+3.  Add the environment variables in the Railway dashboard.
+4.  Railway will read the `requirements.txt` and start the server automatically.
+
+### **Option 3: Local "Public" Deployment (72-hour test)**
+Run the app with the `share=True` flag in [app/ui.py](file:///d:/selfdrivingcar22/app/ui.py):
+```python
+demo.launch(share=True)
+```
+This will give you a temporary `gradio.live` link you can send to anyone!
